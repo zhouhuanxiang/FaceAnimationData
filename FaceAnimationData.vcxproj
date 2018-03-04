@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9623C4F4-8AF7-4094-868F-E3CDC1D501AB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FaceAnimationData</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)../../thirdparty/OpenCV/include;$(SolutionDir)../../thirdparty/mLib/include;$(SolutionDir)../../thirdparty/CGAL/include;$(SolutionDir)../../thirdparty/boost/include;$(SolutionDir)../../thirdparty/ceres-solver/include;$(SolutionDir)../../thirdparty/Eigen;$(SolutionDir)../../thirdparty/SuiteSparse/include;$(SolutionDir)../../thirdparty/assimp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../../thirdparty/OpenCV/lib;$(SolutionDir)../../thirdparty/mLib/lib;$(SolutionDir)../../thirdparty/boost/lib;$(SolutionDir)../../thirdparty/CGAL/lib;$(SolutionDir)../../thirdparty/ceres-solver/lib;$(SolutionDir)../../thirdparty/SuiteSparse/lib64;$(SolutionDir)../../thirdparty/assimp/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)../../thirdparty/OpenCV/include;$(SolutionDir)../../thirdparty/mLib/include;$(SolutionDir)../../thirdparty/CGAL/include;$(SolutionDir)../../thirdparty/boost/include;$(SolutionDir)../../thirdparty/ceres-solver/include;$(SolutionDir)../../thirdparty/Eigen;$(SolutionDir)../../thirdparty/SuiteSparse/include;$(SolutionDir)../../thirdparty/assimp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../../thirdparty/OpenCV/lib;$(SolutionDir)../../thirdparty/mLib/lib;$(SolutionDir)../../thirdparty/boost/lib;$(SolutionDir)../../thirdparty/CGAL/lib;$(SolutionDir)../../thirdparty/ceres-solver/lib;$(SolutionDir)../../thirdparty/SuiteSparse/lib64;$(SolutionDir)../../thirdparty/assimp/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libblas.lib;liblapack.lib;libamdd.lib;libbtfd.lib;libcamdd.lib;libccolamdd.lib;libcholmodd.lib;libcolamdd.lib;libcxsparsed.lib;libklud.lib;libldld.lib;libspqrd.lib;libumfpackd.lib;metisd.lib;suitesparseconfigd.lib;libglog_staticd.lib;opencv_core2413d.lib;opencv_highgui2413d.lib;opencv_imgproc2413d.lib;opencv_nonfree2413d.lib;opencv_features2d2413d.lib;opencv_calib3d2413d.lib;opencv_flann2413d.lib;opencv_objdetect2413d.lib;ceresd.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libblas.lib;liblapack.lib;libamd.lib;libbtf.lib;libcamd.lib;libccolamd.lib;libcholmod.lib;libcolamd.lib;libcxsparse.lib;libklu.lib;libldl.lib;libspqr.lib;libumfpack.lib;metis.lib;suitesparseconfig.lib;libglog_static.lib;ceres.lib;opencv_core2413.lib;opencv_highgui2413.lib;opencv_imgproc2413.lib;opencv_nonfree2413.lib;opencv_features2d2413.lib;opencv_calib3d2413.lib;opencv_flann2413.lib;opencv_objdetect2413.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="defines.h" />
+    <ClInclude Include="deformation_transfer.h" />
+    <ClInclude Include="eigen_binary_io.h" />
+    <ClInclude Include="expression_generator.h" />
+    <ClInclude Include="expression_transfer.h" />
+    <ClInclude Include="face_detector.h" />
+    <ClInclude Include="file_func.h" />
+    <ClInclude Include="header.h" />
+    <ClInclude Include="image_reader.h" />
+    <ClInclude Include="image_reader_kinect.h" />
+    <ClInclude Include="imgproc\filter.h" />
+    <ClInclude Include="mask_reader.h" />
+    <ClInclude Include="mlibutil\mlibutil.h" />
+    <ClInclude Include="model_preprocess.h" />
+    <ClInclude Include="model_reader.h" />
+    <ClInclude Include="parameters.h" />
+    <ClInclude Include="pca_generator.h" />
+    <ClInclude Include="pca_generator_3d.h" />
+    <ClInclude Include="SICP\nanoflann.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mlibutil\mlibutil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

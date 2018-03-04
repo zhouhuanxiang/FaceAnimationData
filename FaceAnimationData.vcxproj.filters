@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="help_func">
+      <UniqueIdentifier>{634cc7a7-bad9-474c-a394-3d68ba322c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgproc">
+      <UniqueIdentifier>{96737e9f-f59a-47c0-86e9-2fd6afa5d8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mlibutil">
+      <UniqueIdentifier>{bc2ebb78-f76e-442b-98ff-891e4ce86539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="reader">
+      <UniqueIdentifier>{6cf3848f-832f-4814-9358-dcd08bec06f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SICP">
+      <UniqueIdentifier>{b3653331-4ac8-475a-8f27-1accd6f86b63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="eigen_binary_io.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="expression_generator.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="expression_transfer.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="model_preprocess.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="pca_generator.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="deformation_transfer.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="face_detector.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="file_func.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+    <ClInclude Include="imgproc\filter.h">
+      <Filter>imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="mlibutil\mlibutil.h">
+      <Filter>mlibutil</Filter>
+    </ClInclude>
+    <ClInclude Include="image_reader.h">
+      <Filter>reader</Filter>
+    </ClInclude>
+    <ClInclude Include="image_reader_kinect.h">
+      <Filter>reader</Filter>
+    </ClInclude>
+    <ClInclude Include="mask_reader.h">
+      <Filter>reader</Filter>
+    </ClInclude>
+    <ClInclude Include="model_reader.h">
+      <Filter>reader</Filter>
+    </ClInclude>
+    <ClInclude Include="SICP\nanoflann.hpp">
+      <Filter>SICP</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parameters.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pca_generator_3d.h">
+      <Filter>help_func</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mlibutil\mlibutil.cpp">
+      <Filter>mlibutil</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
